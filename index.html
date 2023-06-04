@@ -5,13 +5,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <!-- custom js  -->
 
     <script src="./assets/js/app.js"></script>
     <script src="./assets/js/route.js"></script>
+    <script src="https://kit.fontawesome.com/2ad6b0848e.js" crossorigin="anonymous"></script>
 </head>
 <body>
     
+    <!-- header -->
+
+    <header class="header">
+
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="./assets/images/logo.png" alt="" sizes="" srcset="">
+            </a>
+
+            <div class="search-view">
+
+                <div class="search-wrapper">
+                    <input type="search" id="" class="search-filed"
+                    placeholder="search city ...."
+                      
+                    autocomplete="off"
+                    class="search-field"
+                    data-search-filed>
+                
+                    <span class="m-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                    <button class="icon-btn leading-icon has-state" aria-label="close search" data-search-toggler>
+                        <span class="m-icon">    <i class="fa-solid fa-arrow-left"></i></span>
+                        </button>
+                  <!-- <span class="m-icon">Search</span> -->
+                </div>
+
+
+                <div class="search-result"  data-search-result>
+
+                    <ul class="view-list" data-search-list>
+    
+                        <li class="view-item">
+                              
+                           
+
+                            <span class="m-icon">  <i class="fa-solid fa-location-crosshairs"></i></span>
+    
+                            <div>
+                                <p class="item-title">London</p>
+                                <p class="label-2 item-subtitle">State of London</p>
+                            </div>
+    
+    
+                            <a href="#" class="item-link has-state" data-search-toggler=""></a>
+                    
+                        </li>
+    
+                    </ul>
+    
+    
+                </div> 
+              
+           
+            </div>
+
+         
+            <div class="header-actions">
+
+                <button class="icon-btn has-state" aria-label="open search" data-search-toggler>
+
+                    <span class="m-icon icon"> <i class="fa-solid fa-magnifying-glass"></i></span>
+
+                </button>
+
+                <a href="#/current-location" class="btn-primary has-state" data-current-location-btn disabled>
+                  
+                    <span class="m-icon"><i class="fa-solid fa-location-dot"></i></span>
+
+                <span class="span">Current Location</span>
+            </a>
+            </div>
+
+
+
+        </div>
+    </header>
+
+
+
 </body>
 </html>
