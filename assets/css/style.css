@@ -589,6 +589,10 @@ article.container::before {
   z-index: 1;
 }
 
+.section:not(:last-child){
+
+  margin-block-end: 16px;
+}
 
 
 /*-----------------------------------*\
@@ -596,7 +600,44 @@ article.container::before {
 \*-----------------------------------*/
 
 
+.current-weather-card .wrapper {
+  margin-block: 12px;
+  display: flex;
+  gap: 90px;
+  align-items: center;
+}
 
+.current-wether-card .wather-icon {
+  margin-inline: auto;
+
+}
+
+.current-wether-card   > .body-3  {
+  text-transform: capitalize;
+}
+
+.current-weather-card .meta-list {
+  margin-block-start: 16px;
+  padding-block-start: 16px;
+  border-block-start: 1px solid var(--outline);
+}
+
+
+.current-weather-card .meta-item {
+ 
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.current-weather-card .meta-item:not(:last-child){
+  margin-block-end: 12px;
+}
+
+
+.current-weather-card  .meta-text {
+  color: var(--on-surface-variant);
+}
 
 
 /*-----------------------------------*\
